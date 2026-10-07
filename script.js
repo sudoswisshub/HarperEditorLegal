@@ -1,8 +1,8 @@
-// Harper Editor - Web JavaScript
+// Proofmark - Web JavaScript
 document.addEventListener('DOMContentLoaded', () => {
   // Theme Toggle Functionality
   const themeToggleBtn = document.getElementById('theme-toggle');
-  const storedTheme = localStorage.getItem('harper_theme');
+  const storedTheme = localStorage.getItem('proofmark_theme');
 
   if (storedTheme) {
     document.documentElement.setAttribute('data-theme', storedTheme);
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('harper_theme', newTheme);
+      localStorage.setItem('proofmark_theme', newTheme);
     });
   }
 
